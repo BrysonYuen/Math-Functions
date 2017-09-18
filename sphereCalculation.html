@@ -1,0 +1,18 @@
+<html>
+  <head></head>
+  <body>
+  <script>
+    function findVolume() {
+      var radius = document.getElementById('radius').value;
+      var radius = parseInt(radius);
+      var r = Math.pow(radius,3);
+      var step1 = (4/3 * 3.141592653);
+      var step2 = (step1 * r);
+      document.getElementById('output').innerHTML = step2;
+    }
+  </script>
+    <input type="number" id="radius">
+    <button onclick="findVolume()">Find Volume</button>
+    <h1 id="output"></h1>
+  </body>
+</html>
